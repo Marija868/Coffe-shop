@@ -1,0 +1,241 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+/********************************HEADER********************************************/
+
+
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header-logo {
+    width: 250px;
+}
+
+header a{
+    color: white;
+    margin-left: 24px;
+}
+
+#header a:hover{
+     color: rgb(201, 123, 21);
+ }
+
+header a:visited {
+    color: rgb(255, 255, 255);
+}
+
+
+#menu-btn i {
+    font-size: 32px;
+}
+
+#menu-btn i:hover {
+    color: rgb(201, 123, 21);
+}
+
+.solid-header {
+    position: fixed;
+    background-color: #c69572;
+
+    transition: background-color 0.4s ease;
+}
+
+/********************************HERO SECTION********************************************/
+
+
+#hero-section {
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #41333294;
+    height: 100vh;
+}
+
+#hero-logo {
+    width: 256px;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    color: white;
+    
+}
+
+#white-arrow{
+    width: 50px;
+}
+
+.menu{
+    padding-top: 5px;
+}
+
+
+/**************************************INTRO-SECTION*********************************/
+
+#intro-section{
+    background: #eae7de;
+}
+
+#arrow{
+    font-size: 25px;
+}
+#arrow-down:hover{
+    transform: scale(1.1);
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+
+/**************************************ABOUT-SECTION*********************************/
+
+
+#about-bg-1{
+    background-image: url(../img/pub.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+    
+}
+
+
+#about-bg-2{
+    background-image: url(../img/cup\ of\ coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 640px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+#about-bg-2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000af;
+}   
+}
+
+
+/**************************************MENU-SECTION*********************************/
+
+
+#menu-section{
+    background-color: white; /*bila je boja #eae7de, ali nisam uspjela naci slike sa providnom pozadinom pa je pozadina ostavljena bijela*/
+}
+
+
+
+
+
+
+/**************************************CONTACT-SECTION*********************************/
+
+
+
+#contact-info-bg-1{
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/cat_open_inscription_160287_2560x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;  
+}
+
+
+#contact-info-bg-2{
+    background-color: #312423a8;
+}
+
+
+/**************************************MAP-SECTION*********************************/
+
+#map {
+    height: 480px;
+}
+
+
+
+/**************************************FOOTER-SECTION*********************************/
+
+footer {
+    background-color: #312423;
+}
+
+
+footer a i {
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+
+@media (max-width: 768px){
+    footer{
+        text-align: center;
+    }
+    #social-icons{
+        text-align: center !important;
+        margin-top: 8px;
+    }   /* !important da bi se ukinula bootstrap stilizacija i da bi se ikonice centrirale*/
+}
+
+
+
+/**************************************MOBILE-MENU*********************************/
+
+#mobile-menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(19, 14, 11, 0.829);
+    z-index: 2;
+
+    display: none;
+}
+
+#mobile-menu a{
+    color: white;
+}
+
+#mobile-menu a:hover {
+    color: rgb(175, 171, 171);
+}
+
+#mobile-menu #close-btn {
+    position: absolute;
+    right: 29px;
+    top: 12px;
+    
+}
+
+#close-btn i {
+    font-size: 36px;
+}
